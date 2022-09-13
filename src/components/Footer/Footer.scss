@@ -1,0 +1,14 @@
+.footer {
+	background-color: rgb(44, 43, 43);
+	height: 4rem;
+	display: grid;
+	place-items: center;
+	color: #fff;
+
+	p {
+		letter-spacing: 2px;
+		span {
+			color: crimson;
+		}
+	}
+}

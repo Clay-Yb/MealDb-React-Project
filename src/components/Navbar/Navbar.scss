@@ -1,0 +1,61 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	z-index: 100;
+
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 4.5rem;
+
+		.logo {
+			font-weight: 600;
+			font-size: 2rem;
+			letter-spacing: 2px;
+			color: #1d1a39;
+			span {
+				color: crimson;
+			}
+		}
+
+		ul {
+			display: flex;
+			gap: 1.25rem;
+			li {
+				width: 100%;
+				a {
+					color: #1d1a39;
+					font-weight: 500;
+					transition: all 0.4s;
+					&.active {
+						color: crimson;
+					}
+				}
+				&:hover a {
+					color: crimson;
+				}
+			}
+			.fav_item {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				span {
+					background-color: crimson;
+					color: #fff;
+					border-radius: 50%;
+					width: 20px;
+					height: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 0.7rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.home_container {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	height: 77.6vh;
+	.home_content {
+		h2 {
+			font-size: 2.5rem;
+			line-height: 2.75rem;
+		}
+		p {
+			line-height: 2rem;
+			margin: 1rem 0;
+		}
+		button {
+			background-color: crimson;
+			border: 2px solid crimson;
+			color: #fff;
+			padding: 0.4rem 1.5rem;
+			font-weight: 500;
+			font-size: 0.9rem;
+			border-radius: 4px;
+			transition: all 0.4s;
+			&:hover {
+				background-color: transparent;
+				color: crimson;
+			}
+		}
+	}
+
+	.home_image {
+		justify-self: center;
+		position: relative;
+		img {
+			width: 350px;
+			height: 350px;
+			border-radius: 8px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			background: url("https://www.themealdb.com/images/media/meals/xrysxr1483568462.jpg");
+			width: 100px;
+			height: 100px;
+			background-position: center;
+			background-size: cover;
+			top: -3rem;
+			right: -2rem;
+			border-radius: 4px;
+		}
+	}
+}

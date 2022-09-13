@@ -1,0 +1,87 @@
+.meal {
+	&.active_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		.meal_image {
+			flex: 1;
+		}
+		.meal_infos {
+			flex: 2;
+			line-height: initial;
+			h5 {
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 0.9rem;
+				margin-bottom: 0.5rem;
+			}
+			span {
+				display: block;
+				font-size: 0.9rem;
+			}
+			a {
+				color: crimson;
+				font-weight: 500;
+				font-size: 0.9rem;
+			}
+		}
+	}
+	.meal_image {
+		position: relative;
+		img {
+			border-radius: 8px;
+			width: 100%;
+			display: block;
+		}
+
+		.layer {
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 8px;
+			z-index: 10;
+			display: grid;
+			place-items: center;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.4s;
+
+			svg {
+				font-size: 2rem;
+				color: #fff;
+			}
+		}
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #fff;
+			padding: 0.1rem 0.5rem;
+			border-top-left-radius: 6px;
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+
+		&:hover .layer {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.meal_infos {
+		line-height: 1.25rem;
+		h5 {
+			font-size: 1rem;
+			font-weight: 600;
+		}
+		p {
+			font-size: 0.85rem;
+			color: gray;
+		}
+	}
+}

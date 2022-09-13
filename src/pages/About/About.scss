@@ -1,0 +1,43 @@
+.section_header {
+	background-color: rgb(206, 204, 204);
+	padding: 0 14.5%;
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	a {
+		color: crimson;
+	}
+}
+
+.about_container {
+	padding: 3rem 0;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1rem;
+	min-height: 65vh;
+
+	.about_image {
+		justify-self: center;
+		img {
+			width: 600px;
+			border-radius: 12px;
+		}
+	}
+	.about_content {
+		h1 {
+			font-size: 2.7rem;
+		}
+		.underline {
+			width: 100px;
+			height: 3px;
+			background-color: crimson;
+			margin-bottom: 1rem;
+		}
+		p {
+			line-height: 2rem;
+		}
+	}
+}

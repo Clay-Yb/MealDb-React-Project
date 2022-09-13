@@ -1,0 +1,15 @@
+.favMeal_container {
+	min-height: 77.6vh;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 2rem 0;
+
+	h1 {
+		text-align: center;
+		font-weight: 500;
+		letter-spacing: 2px;
+	}
+}

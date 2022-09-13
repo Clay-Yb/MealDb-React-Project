@@ -1,0 +1,60 @@
+.back_btn {
+	background-color: crimson;
+	color: #fff;
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	margin-top: 2rem;
+	display: inline-block;
+}
+.singleMeal_container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
+	padding: 2.5rem 0;
+	gap: 1rem;
+	min-height: 45vh;
+	height: 100%;
+
+	.singleMeal_image {
+		img {
+			border-radius: 12px;
+			width: 400px;
+			height: 400px;
+		}
+	}
+	.singleMeal_infos {
+		p {
+			margin-bottom: 0.5rem;
+			.title {
+				background-color: crimson;
+				color: #fff;
+				padding: 0.1rem 0.5rem;
+				border-radius: 4px;
+				font-size: 0.9rem;
+				font-weight: 500;
+			}
+		}
+	}
+	button {
+		text-transform: capitalize;
+		background-color: transparent;
+		color: crimson;
+		font-weight: 500;
+	}
+	@media screen and (max-width: 800px) {
+		grid-template-columns: initial;
+		justify-content: center;
+		align-items: center;
+		.singleMeal_image {
+			justify-self: center;
+		}
+	}
+}
+
+.link_yt {
+	display: grid;
+	place-items: center;
+	color: crimson;
+}
