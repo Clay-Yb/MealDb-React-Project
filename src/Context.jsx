@@ -12,7 +12,8 @@ const ingreUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?i=";
 
 const foodTypeUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
 
-const foodAreaUrl = "http://www.themealdb.com/api/json/v1/1/filter.php?a=";
+
+const foodAreaUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?a=";
 
 const AppContext = createContext();
 
